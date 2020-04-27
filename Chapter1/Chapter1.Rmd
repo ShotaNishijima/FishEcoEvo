@@ -1,0 +1,64 @@
+---
+title: |
+    | Chapter 1 
+    | Nothing as practical as a good theory 
+    | 良い理論ほど実践的だ
+subtitle: |
+    | in "Fish Ecology, Evolution, and Exploitation: 
+    | A Theoretical Synthesis"
+    | by Ken H. Andersen  
+author: "担当：西嶋 翔太（にしじましょうた）"
+date: "2020/5/11"
+header-includes:
+  \usepackage{luatexja-otf}
+  \hypersetup{unicode=true}
+  \usepackage{luatexja-fontspec}
+  \setmainjfont[BoldFont=HaranoAjiGothic-Bold]{HaranoAjiGothic-Regular}
+  \setsansjfont{HaranoAjiGothic-Medium}
+output: 
+  beamer_presentation:
+    latex_engine: lualatex
+    theme: "default"
+    colortheme: "seahorse"
+    fig_caption: false
+# mainfont: Meiryo
+# monofont: Meiryo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      cache= TRUE)
+```
+
+```{r verbose, include=FALSE}
+options(tinytex.verbose = TRUE)
+```
+
+##   Fish Ecology, Evolution, and Exploitation:  A Theoretical Synthesis
+
+```{r about_book, out.width=250}
+knitr::include_graphics("FishEcoEvoBook.jpg")
+```
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
