@@ -99,15 +99,18 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{luatexja-otf}
-
 \hypersetup{unicode=true}
-
 \usepackage{luatexja-fontspec}
-
 \setmainjfont[BoldFont=HaranoAjiGothic-Bold]{HaranoAjiGothic-Regular}
 \setsansjfont{HaranoAjiGothic-Medium}
-
-\usepackage{setspace} \newcommand{\bdoublespace}{\begin{spacing}{1.5}} \newcommand{\edoublespace}{\end{spacing}{}} \newcommand{\vspacelarge}{\vspace{6mm}} \newcommand{\vspacesmall}{\vspace{3mm}}
+\usepackage{setspace}
+\newcommand{\bdoublespace}{\begin{spacing}{1.5}}
+\newcommand{\edoublespace}{\end{spacing}{}}
+\newcommand{\vspacelarge}{\vspace{6mm}}
+\newcommand{\vspacesmall}{\vspace{3mm}}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[page number]
+\setbeamertemplate{itemize items}[circle]
 
 \title{Chapter 1\\
 Nothing as Practical as a Good Theory\\
@@ -121,7 +124,7 @@ by Ken H. Andersen}
 \begin{document}
 \frame{\titlepage}
 
-\begin{frame}{著者について}
+\begin{frame}{著者について \footnote[frame]{https://ken.haste.dk/}}
 \protect\hypertarget{ux8457ux8005ux306bux3064ux3044ux3066}{}
 
 \begin{block}{Ken H. Andersen}
@@ -136,7 +139,7 @@ by Ken H. Andersen}
 
 I want to understand how life in the ocean is organised, why marine organisms look and act the way they do, and how marine ecosystems react to perturbations like  fishing, species removals/invasions or climate change.  
   
-\vspace{3mm}
+\vspacesmall
 More specifically I work on:  
 
 - Trait-based models of life in the ocean  
@@ -145,7 +148,7 @@ More specifically I work on:
 
 - Fisheries induced  evolution  
   
-\vspace{3mm}
+\vspacesmall
 Previously I have worked with sand ripples under surface waves and barchan dunes in deserts.
 
 \end{columns}
@@ -161,20 +164,21 @@ Previously I have worked with sand ripples under surface waves and barchan dunes
 
 \end{frame}
 
-\begin{frame}{この本のレビュー}
+\begin{frame}{この本のレビュー
+\footnote[frame]{https://press.princeton.edu/books/hardcover/9780691176550/fish-ecology-evolution-and-exploitation}}
 \protect\hypertarget{ux3053ux306eux672cux306eux30ecux30d3ux30e5ux30fc}{}
 
 \begin{columns}
-\column{0.30\textwidth}
+\column{0.25\textwidth}
 
 
-\includegraphics[width=100px]{FishEcoEvoBook} 
+\includegraphics[width=80px]{FishEcoEvoBook} 
 
-\column{0.70\textwidth}
+\column{0.75\textwidth}
 
 - "Andersen pulls together a cohesive theory from a synthesis of decades of work. He presents a clear and pragmatic foundation for understanding the dynamics at the heart of fisheries and ecology—of individuals, populations, and communities. This leveler will help pave the way for many to tackle the leviathan that is multispecies fisheries."—Beth Fulton
 
-\vspace{3mm}
+\vspacesmall
 - "This book is a fantastic explanation of size- and trait-based analysis of marine ecosystems that should be required reading for marine ecologists and fisheries scientists. Among other results, Andersen provides insights into a community-based approach to ecosystem-based fisheries management."—Ray Hilborn
 
 \end{columns}
@@ -202,17 +206,17 @@ Nothing as Practical as a Good Theory
 \tightlist
 \item
   魚は約1gから100kgまでの体サイズをもち、海の優占的な生物\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   生産性は高く、人々の食糧と富の供給源\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   水産業は世界のたんぱく質の消費量の10％を供給し、その価値は100億ドル
   (FAO 2016)\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   20世紀半ばに近代トロールの技術が登場して以来、魚類資源の過剰利用が可能になった\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   高い漁獲量を維持するためには、漁業管理が必要である
 \end{itemize}
@@ -235,14 +239,14 @@ Nothing as Practical as a Good Theory
 \tightlist
 \item
   単一資源管理から生態系アプローチへの拡張\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   漁業による選択の長期的な進化的影響は？\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   生物宅的情報が（ほとんど）ない状況、特に開発途上国において、多くの割合を占める「データ不足
   (data poor)」な資源をどう管理すべきか？\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   種の多様性が高く、種をほとんど区別しない漁業が実施されており、資源毎の管理が非現実的な多くの生態系をどう扱うべきか？
 \end{itemize}
@@ -256,13 +260,13 @@ Nothing as Practical as a Good Theory
 \tightlist
 \item
   手助けやインスピレーションの基となるのは（一般）生態学である\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   べバートンとホルトがその枠組みを構築して以来、水産資源学は生態学からは分岐し、管理のための実践的な場面への適用に重きを置くようになった\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   水産資源学は独自の会議や学会を発展させ、プロシーディングスや会議文書といったグレイペーパーや専門的な雑誌で研究発表を行ってきた\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   一方で生態学は、陸水学・食物網生態学・構造のある個体群・進化生態学といった水産資源学にも関連する分野を発展させた
 \end{itemize}
@@ -322,13 +326,13 @@ Nothing as Practical as a Good Theory
 \item
   サイズベース・形質ベースのアプローチを、
   魚類の個体群と群集をモデリングするための近代的で一貫した統一的枠組みとして紹介する\\
-  \vspace{3mm}
+  \vspacesmall
 \item
   本理論は生態学と水産資源学の新しい発展から編み出されており、漁業と生態学の問題に幅広く適用可能である\\
-  \vspace{3mm}
+  \vspacesmall
 \item
   長期間放置されてきた、魚類生態学と水産資源学の思考の統一に貢献したい\\
-  \vspace{3mm}
+  \vspacesmall
 \item
   ここでは本理論の基本要素を説明するが、古典的な水産資源学に由来する要素から始めて、次に海洋生態学・生理学的に構造化した個体群モデル・形質生態学において発展したサイズベース理論を紹介する
 \end{itemize}
@@ -366,7 +370,7 @@ Nothing as Practical as a Good Theory
 \begin{itemize}
 \tightlist
 \item
-  Anderson(著者とは別人)とUrsinは1970年代に、「一次・二次生産から栄養塩循環、餌へのサイズ依存の選択性に至るまでのあらゆることは、魚1個体の生理的な描写に基づいている」という重要で新しい考えを紹介した
+  Andersen(著者とは別人)とUrsinは1970年代に、「一次・二次生産から栄養塩循環、餌へのサイズ依存の選択性に至るまでのあらゆることは、魚1個体の生理的な描写に基づいている」という重要で新しい考えを紹介した
   （が、数式の複雑さや無名の雑誌で公表したことが原因で忘れ去られた）\\
 \item
   著者の理論は、Kleiberの法則と呼ばれる体サイズによる代謝作用のスケーリングと「大きい魚はより小さい魚を食べる」という法則に基づく
@@ -391,14 +395,14 @@ Nothing as Practical as a Good Theory
 \begin{itemize}
 \tightlist
 \item
-  植物と魚類は①（多くの場合で）小さい子を生む、②（多くの場合で）子育てを行わない、③成熟後も成長を続けるという点で似ている\\
-  \vspace{6mm}
+  植物と魚類は①（多くの場合で）小さい子を生む、②（多くの場合で）子育てを行わない、③成熟後も成長を続ける、という点で似ている\\
+  \vspacelarge
 \item
   植物生態学者は形態ベースのアプローチを発展させ、無数の種からなる複雑な群集に取り組んでいる\\
-  \vspace{6mm}
+  \vspacelarge
 \item
   種が漁業管理と生物学の格である状況において、形質ベースアプローチは議論の的である
-  \vspace{6mm}
+  \vspacelarge
 \item
   個体群レベルの理論の多くが特定の種に対してきちんと適用できる
 \end{itemize}
@@ -412,23 +416,23 @@ Nothing as Practical as a Good Theory
 \tightlist
 \item
   著者の形質ベースアプローチはJohn Popeら (2006) の研究から着想を得た\\
-  \vspace{3mm}
+  \vspacesmall
 \item
   全ての種のあるパラメータを、各々の種の最大体長の平均と関連付ける
-  \vspace{3mm}
+  \vspacesmall
 \item
-  漸近（最大）体サイズがマスタートレイトである \vspace{3mm}
+  漸近（最大）体サイズがマスタートレイトである \vspacesmall
 \item
   他の形質も含めて一般化することは可能だが、少ない形質で種を特徴づけられると考えているため、
   形質の追加は慎重に行うべきである\\
-  \vspace{3mm}
+  \vspacesmall
 \item
   形質ベースアプローチは、多くの種が相互作用する食物網の複雑さを回避できるため、
   魚類群集全体の動的理論の開発に重要である\\
-  \vspace{3mm}
+  \vspacesmall
 \item
-  ある資源の知見が少なくても、水揚げされた個体の最大サイズについてはよく知っているので、形質ベースアプローチは、理論をデータ不足下と関連付ける隠し味である\\
-  \vspace{3mm}
+  ある資源の知見が少なくても、水揚げされた個体の最大サイズについては分かっていることは多く、形質ベースアプローチは、理論をデータ不足下と関連付けるための隠し味である\\
+  \vspacesmall
 \item
   現実の生態系は種から構成されており、
   実践的な漁業管理は個々の資源に注意を払わなくてはいけない
@@ -450,6 +454,11 @@ What Charactarizes a Good Theory?
 
 \end{frame}
 
+\begin{frame}{良い理論とはカードゲームのようなものだ}
+\protect\hypertarget{ux826fux3044ux7406ux8ad6ux3068ux306fux30abux30fcux30c9ux30b2ux30fcux30e0ux306eux3088ux3046ux306aux3082ux306eux3060}{}
+
+\end{frame}
+
 \begin{frame}
 
 \begin{LARGE} 
@@ -461,6 +470,101 @@ How to Read This Book
 \end{bf}
 \end{center}
 \end{LARGE}
+
+\end{frame}
+
+\begin{frame}{本の構成}
+\protect\hypertarget{ux672cux306eux69cbux6210}{}
+
+\begin{block}{4つのパートからなる}
+
+\begin{enumerate}
+\tightlist
+\item
+  Individuals: 個体レベルの生物現象に関する大前提
+
+  \begin{itemize}
+  \tightlist
+  \item
+    2章: サイズスペクトル理論
+  \item
+    3章: 個体の成長と繁殖
+  \end{itemize}
+\item
+  Populations: 個体群統計学と単一種管理
+
+  \begin{itemize}
+  \tightlist
+  \item
+    4章: 個体群統計学
+  \item
+    5章: 漁獲
+  \item
+    6章: 漁業による進化
+  \item
+    7章: 個体群動態
+  \end{itemize}
+\item
+  Traits: 進化生態学や生活史理論との関連付け
+
+  \begin{itemize}
+  \tightlist
+  \item
+    8章: 「真骨魚類」vs,「軟骨魚類」
+  \item
+    9章: 魚類生態学の形質ベースアプローチ
+  \end{itemize}
+\item
+  Communities: ひとつの個体群から群集全体への拡張
+
+  \begin{itemize}
+  \tightlist
+  \item
+    10章: 消費者―資源動態
+  \item
+    11章: 魚類群集の形質構造
+  \item
+    12章: 漁獲の群集影響
+  \item
+    13章: チャンスとチャレンジ
+  \end{itemize}
+\end{enumerate}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{各章の位置づけ}
+\protect\hypertarget{ux5404ux7ae0ux306eux4f4dux7f6eux3065ux3051}{}
+
+\begin{center}\includegraphics[width=225px]{Fig2} \end{center}
+
+\end{frame}
+
+\begin{frame}{この本を読むにあたって}
+\protect\hypertarget{ux3053ux306eux672cux3092ux8aadux3080ux306bux3042ux305fux3063ux3066}{}
+
+\begin{itemize}
+\tightlist
+\item
+  著者が25以上の雑誌に発表した10年以上の成果の集大成である\\
+  \vspacesmall
+\item
+  数式に馴れていない読者のために、概念や原理、結果の説明に重きを置いた\\
+  \vspacesmall
+\item
+  複雑な数式の導出はBoxに示し、Boxを飛ばしても読めるようになっている\\
+  \vspacesmall
+\item
+  図の生成のためのコードはRで描かれており、Web上で公開されている
+  \footnote[frame]{https://github.com/Kenhasteandersen/Fish}\\
+  \vspacesmall
+\item
+  始めから最後まで順番に読む必要はない\\
+  \vspacesmall
+\item
+  少なくとも2章の最初の部分を呼んで理論の基本となる前提を理解し、可能であれば3章も合わせて読むことを推奨する
+\end{itemize}
 
 \end{frame}
 

@@ -9,17 +9,17 @@ subtitle: |
     | by Ken H. Andersen  
 author: "担当：西嶋 翔太"
 date: "2020/5/11"
-header-includes:
-  \usepackage{luatexja-otf}
-  \hypersetup{unicode=true}
-  \usepackage{luatexja-fontspec}
-  \setmainjfont[BoldFont=HaranoAjiGothic-Bold]{HaranoAjiGothic-Regular}
-  \setsansjfont{HaranoAjiGothic-Medium}
-  \usepackage{setspace}
-  \newcommand{\bdoublespace}{\begin{spacing}{1.5}}
-  \newcommand{\edoublespace}{\end{spacing}{}}
-  \newcommand{\vspacelarge}{\vspace{6mm}}
-  \newcommand{\vspacesmall}{\vspace{3mm}}
+# header-includes:
+#   \usepackage{luatexja-otf}
+#   \hypersetup{unicode=true}
+#   \usepackage{luatexja-fontspec}
+#   \setmainjfont[BoldFont=HaranoAjiGothic-Bold]{HaranoAjiGothic-Regular}
+#   \setsansjfont{HaranoAjiGothic-Medium}
+#   \usepackage{setspace}
+#   \newcommand{\bdoublespace}{\begin{spacing}{1.5}}
+#   \newcommand{\edoublespace}{\end{spacing}{}}
+#   \newcommand{\vspacelarge}{\vspace{6mm}}
+#   \newcommand{\vspacesmall}{\vspace{3mm}}
 output: 
   beamer_presentation:
     latex_engine: lualatex
@@ -27,6 +27,8 @@ output:
     colortheme: "seahorse"
     fig_caption: false
     keep_tex: true
+    includes:
+      in_header: header_config.tex
 # mainfont: Meiryo
 # monofont: Meiryo
 ---
@@ -37,8 +39,8 @@ knitr::opts_chunk$set(echo = FALSE,
 options(tinytex.verbose = TRUE)
 ```
 
-## 著者について {.smaller}
-### Ken H. Andersen
+## 著者について \footnote[frame]{https://ken.haste.dk/} {.smaller}
+### Ken H. Andersen 
 
 \begin{columns}
 \column{0.30\textwidth}
@@ -66,22 +68,23 @@ Previously I have worked with sand ripples under surface waves and barchan dunes
 \end{columns}
 
 ## Google Scholar Citation
+<!-- \footnote[frame]{scholar.google.com/citations?user=g1tHbaEAAAAJ&hl=ja} -->
 
 ```{r google_scholar_citation}
 knitr::include_graphics("GoogleScholarCitation.png")
 ```
 
 
-## この本のレビュー {.smaller}
+## この本のレビュー  \footnote[frame]{https://press.princeton.edu/books/hardcover/9780691176550/fish-ecology-evolution-and-exploitation} {.smaller}
 
 \begin{columns}
-\column{0.30\textwidth}
+\column{0.25\textwidth}
 
-```{r about_book, out.width=100}
+```{r about_book, out.width=80}
 knitr::include_graphics("FishEcoEvoBook.jpg")
 ```
 
-\column{0.70\textwidth}
+\column{0.75\textwidth}
 
 - "Andersen pulls together a cohesive theory from a synthesis of decades of work. He presents a clear and pragmatic foundation for understanding the dynamics at the heart of fisheries and ecology—of individuals, populations, and communities. This leveler will help pave the way for many to tackle the leviathan that is multispecies fisheries."—Beth Fulton
 
@@ -203,7 +206,7 @@ knitr::include_graphics("Fig1.png")
 ## 多種系およびサイズベースのアプローチ  {.smaller}
   
 <!-- \vspacesmall -->
-- Anderson(著者とは別人)とUrsinは1970年代に、「一次・二次生産から栄養塩循環、餌へのサイズ依存の選択性に至るまでのあらゆることは、魚1個体の生理的な描写に基づいている」という重要で新しい考えを紹介した
+- Andersen(著者とは別人)とUrsinは1970年代に、「一次・二次生産から栄養塩循環、餌へのサイズ依存の選択性に至るまでのあらゆることは、魚1個体の生理的な描写に基づいている」という重要で新しい考えを紹介した
 （が、数式の複雑さや無名の雑誌で公表したことが原因で忘れ去られた）  
 <!-- \vspacesmall -->
 - 著者の理論は、Kleiberの法則と呼ばれる体サイズによる代謝作用のスケーリングと「大きい魚はより小さい魚を食べる」という法則に基づく
@@ -224,7 +227,7 @@ knitr::include_graphics("Fig1.png")
 
 ## 植物と魚の類似点
 
-- 植物と魚類は①（多くの場合で）小さい子を生む、②（多くの場合で）子育てを行わない、③成熟後も成長を続けるという点で似ている  
+- 植物と魚類は①（多くの場合で）小さい子を生む、②（多くの場合で）子育てを行わない、③成熟後も成長を続ける、という点で似ている  
 \vspacelarge
 - 植物生態学者は形態ベースのアプローチを発展させ、無数の種からなる複雑な群集に取り組んでいる  
 \vspacelarge
@@ -265,6 +268,9 @@ What Charactarizes a Good Theory?
 \end{center}
 \end{LARGE}
 
+## 良い理論とはカードゲームのようなものだ
+
+
 
 ---
 
@@ -277,4 +283,52 @@ How to Read This Book
 \end{bf}
 \end{center}
 \end{LARGE}
+
+
+## 本の構成
+### 4つのパートからなる
+
+1. Individuals: 個体レベルの生物現象に関する大前提  
+    - 2章: サイズスペクトル理論
+    - 3章: 個体の成長と繁殖
+      
+1. Populations: 個体群統計学と単一種管理  
+    - 4章: 個体群統計学
+    - 5章: 漁獲
+    - 6章: 漁業による進化
+    - 7章: 個体群動態
+  
+1. Traits: 進化生態学や生活史理論との関連付け
+    - 8章: 「真骨魚類」vs,「軟骨魚類」
+    - 9章: 魚類生態学の形質ベースアプローチ
+  
+1. Communities: ひとつの個体群から群集全体への拡張  
+    - 10章: 消費者―資源動態
+    - 11章: 魚類群集の形質構造
+    - 12章: 漁獲の群集影響
+    - 13章: チャンスとチャレンジ
+
+
+## 各章の位置づけ
+
+```{r Fig2, out.width=225,fig.align='center'}
+knitr::include_graphics("Fig2.png")
+```
+
+
+## この本を読むにあたって
+  
+- 著者が25以上の雑誌に発表した10年以上の成果の集大成である  
+\vspacesmall
+- 数式に馴れていない読者のために、概念や原理、結果の説明に重きを置いた  
+\vspacesmall
+- 複雑な数式の導出はBoxに示し、Boxを飛ばしても読めるようになっている  
+\vspacesmall
+- 図の生成のためのコードはRで描かれており、Web上で公開されている  \footnote[frame]{https://github.com/Kenhasteandersen/Fish}  
+\vspacesmall
+- 始めから最後まで順番に読む必要はない  
+\vspacesmall
+- 少なくとも2章の最初の部分を呼んで理論の基本となる前提を理解し、可能であれば3章も合わせて読むことを推奨する
+
+<!-- \footnotetext{本文で示されているリンクは見つからない} -->
 
