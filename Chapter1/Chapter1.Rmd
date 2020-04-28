@@ -7,8 +7,10 @@ subtitle: |
     | in "Fish Ecology, Evolution, and Exploitation: 
     | A Theoretical Synthesis"
     | by Ken H. Andersen  
-author: "担当：西嶋 翔太"
-date: "2020/5/11"
+author: |
+    | 担当：西嶋 翔太
+    | （中央水産研究所）
+date: "2020-05-11"
 # header-includes:
 #   \usepackage{luatexja-otf}
 #   \hypersetup{unicode=true}
@@ -70,7 +72,7 @@ Previously I have worked with sand ripples under surface waves and barchan dunes
 ## Google Scholar Citation
 <!-- \footnote[frame]{scholar.google.com/citations?user=g1tHbaEAAAAJ&hl=ja} -->
 
-```{r google_scholar_citation}
+```{r google_scholar_citation, out.width='105%',fig.align='center'}
 knitr::include_graphics("GoogleScholarCitation.png")
 ```
 
@@ -270,7 +272,31 @@ What Charactarizes a Good Theory?
 
 ## 良い理論とはカードゲームのようなものだ
 
+- カードゲームは少なくて単純なルールから、複雑で楽しいゲームを提供する  
+\vspacelarge
+- 理論も少ない基礎的な原理に基づく
+\vspacelarge
+- 原理は広く受け入れられ、確固とした証拠や他の理論との関連をもつ必要がある  
+\vspacelarge
+- よい理論とは定性・定量の両面において重要な予測を導く（最大漁獲を実現する漁獲圧があるということだけでなく、その水準も予測できるのが良い理論）
 
+
+## 生態学において実験は困難である {.smaller}
+
+- 生態学において理想的な条件下で実験が行われるのは、せいぜい個体の生理に関するものくらいである（機能の反応、遊泳速度、代謝率など）  
+\vspacesmall
+- 海では非意図的な実験を実行
+    1. 半世紀以上にわたる大スケールでの漁業の実施によって海の群集がどう変わるか？  
+    1. 資源の除去に対して海洋生態系がどう応答するか？  
+
+\vspacesmall
+- 地球科学や天文学でも実験は困難であるが、ニュートンの法則やシュレディンガー方程式といった確固とした基盤がある  
+\vspacesmall
+- 生態学では、そういった大前提は少なく、有効性も限定的  
+\vspacesmall
+- 海の魚の実験や直接観察は困難であるため、モデルは特別な価値をもつ  
+\vspacesmall
+- モデルをチェックするための直接観察ができないので、信用できるモデルの基礎的な前提を置くことの重要性は高い
 
 ---
 
