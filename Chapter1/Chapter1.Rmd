@@ -88,7 +88,7 @@ knitr::include_graphics("FishEcoEvoBook.jpg")
 
 \column{0.75\textwidth}
 
-- "Andersen pulls together a cohesive theory from a synthesis of decades of work. He presents a clear and pragmatic foundation for understanding the dynamics at the heart of fisheries and ecology—of individuals, populations, and communities. This leveler will help pave the way for many to tackle the leviathan that is multispecies fisheries."—Beth Fulton
+- "Andersen pulls together a cohesive theory from a synthesis of decades of work. He presents a clear and pragmatic foundation for understanding the dynamics at the heart of fisheries and ecology—of individuals, populations, and communities. This leveler will help pave the way for many to tackle the leviathan that is multispecies fisheries."—Beth Fulton\pause
 
 \vspacesmall
 - "This book is a fantastic explanation of size- and trait-based analysis of marine ecosystems that should be required reading for marine ecologists and fisheries scientists. Among other results, Andersen provides insights into a community-based approach to ecosystem-based fisheries management."—Ray Hilborn
@@ -163,11 +163,11 @@ knitr::include_graphics("Fig1.png")
 ### 陸水学  
 - 多様性が低く、生息地の構造が単純であるため、観察や理解が容易
 - 構造をもつ個体群の消費者―資源動態の発展
-- 漁業が行われていない海の状態に近い
+- 漁業が行われていない海の状態に近い\pause
 
 ### 食物網生態学  
 - 食物網構造と安定性の関係に着目し、普遍的なパターンを探求
-- 漁業などの攪乱への応答は中心的な課題ではなかった  
+- 漁業などの攪乱への応答は中心的な課題ではなかった\pause  
 
 ### 進化生態学
 - "Life history invariants"は魚類の観察から生まれた
@@ -187,43 +187,43 @@ knitr::include_graphics("Fig1.png")
 - ここでは本理論の基本要素を説明するが、古典的な水産資源学に由来する要素から始めて、次に海洋生態学・生理学的に構造化した個体群モデル・形質生態学において発展したサイズベース理論を紹介する
 
 
-## 著者の方針  {.smaller}
+## 方針  {.smaller}
 
-- 生態系アプローチを漁業管理に適用できるように、べバートン・ホルトの枠組みを修復し、欠けている要素を補うという誘惑に駆られるかもしれない  
+> - 生態系アプローチを漁業管理に適用できるように、べバートン・ホルトの枠組みを修復し、欠けている要素を補うという誘惑に駆られるかもしれない  
 <!-- \vspacesmall -->
 <!-- - 2つのバイクを溶接して、エンジンを追加して自動車を作るようなものだ   -->
 <!-- \vspacesmall -->
-- べバートン・ホルトの修復では、
+> - べバートン・ホルトの修復では、
 <!-- 私が追い求める -->厳密な理論は構築できない(2つのバイクを溶接して自動車を作るようなものだ！)  
 <!-- \vspacesmall -->
-- 漁業の勧告のような実践的な応用は、確固とした理論的・基礎的理解に基づくのがベストであるはず
+> - 漁業の勧告のような実践的な応用は、確固とした理論的・基礎的理解に基づくのがベストであるはず
 （この本のタイトルにある名言を作ったKurt Lewinと同様に）  
 <!-- \vspacesmall -->
-- von Bertalanffyの成長式・スプレッドシートに適した生命表・親魚の死亡率$M$の概念を捨て,その代わりに生理学・微分方程式・サイズ依存の死亡率を使用する  
+> - Von Bertalanffyの成長式・スプレッドシートに適した生命表・親魚の死亡率$M$の概念を捨て,その代わりに生理学・微分方程式・サイズ依存の死亡率を使用する  
 <!-- \vspacesmall -->
-- 本理論は、Hilborn & Walters (1992) やQuinn & Deriso (1999)といった古典に精通している人には取っつきにくく、複雑に感じるかもしれない  
+> - 本理論は、Hilborn & Walters (1992) やQuinn & Deriso (1999)といった古典に精通している人には取っつきにくく、複雑に感じるかもしれない  
 <!-- \vspacesmall -->
-- 少ない仮定のみで、単一種の影響評価から進化率の推定や生態系の影響評価まで行えることが本理論の利点である
+> - 少ない仮定のみで、単一種の影響評価から進化率の推定や生態系の影響評価まで行えることが本理論の利点である
 
 ## 多種系およびサイズベースのアプローチ  {.smaller}
   
 <!-- \vspacesmall -->
-- Andersen(著者とは別人)とUrsinは1970年代に、「一次・二次生産から栄養塩循環、餌へのサイズ依存の選択性に至るまでのあらゆることは、魚1個体の生理的な描写に基づいている」という重要で新しい考えを紹介した
+> - Andersen(著者とは別人)とUrsinは1970年代に、「一次・二次生産から栄養塩循環、餌へのサイズ依存の選択性に至るまでのあらゆることは、魚1個体の生理的な描写に基づいている」という重要で新しい考えを紹介した
 （が、数式の複雑さや無名の雑誌で公表したことが原因で忘れ去られた）  
 <!-- \vspacesmall -->
-- 著者の理論は、Kleiberの法則と呼ばれる体サイズによる代謝作用のスケーリングと「大きい魚はより小さい魚を食べる」という法則に基づく
+> - 著者の理論は、Kleiberの法則と呼ばれる体サイズによる代謝作用のスケーリングと「大きい魚はより小さい魚を食べる」という法則に基づく
 <!-- \vspacesmall -->
-- この2つの法則は体サイズの分布を説明する (Sheldon et al. 1977)
+> - この2つの法則は体サイズの分布を説明する (Sheldon et al. 1977)
 <!-- \vspacesmall -->
 <!-- - Brown et al. (2004) の代謝理論よりもよりも、著者は特に死亡率に対して、より強力な基盤を提供する   -->
 <!-- \vspacesmall -->
-- 著者は群集だけでなく個体群内のサイズ分布も予測する
+> - 著者は群集だけでなく個体群内のサイズ分布も予測する
 <!-- \vspacesmall -->
-- WernerとGilliam (1984) は年齢ベースのべバートン・ホルト理論では
+> - WernerとGilliam (1984) は年齢ベースのべバートン・ホルト理論では
 異なるステージ間の競争や捕食を表すことができないと指摘し、
 体サイズに基づく理論的枠組みの草案を書いた  
 <!-- \vspacesmall -->
-- PerssonとDe Roos (2013) 
+> - PerssonとDe Roos (2013) 
 は生理学的に構造のある個体群における密度依存的なボトルネックに関する膨大な解析を行った  
 
 
@@ -240,21 +240,21 @@ knitr::include_graphics("Fig1.png")
 
 ## 形質ベースアプローチ
 
-- 著者の形質ベースアプローチはJohn Popeら (2006) の研究から着想を得た  
-\vspacesmall
-- 全ての種のあるパラメータを、各々の種の最大体長の平均と関連付ける
-\vspacesmall
-- 漸近（最大）体サイズがマスタートレイトである
-\vspacesmall
-- 他の形質も含めて一般化することは可能だが、少ない形質で種を特徴づけられると考えているため、
+> - 著者の形質ベースアプローチはJohn Popeら (2006) の研究から着想を得た  
+<!-- \vspacesmall -->
+> - 全ての種のあるパラメータを、各々の種の最大体長の平均と関連付ける
+<!-- \vspacesmall -->
+> - 漸近（最大）体サイズがマスタートレイトである
+<!-- \vspacesmall -->
+> - 他の形質も含めて一般化することは可能だが、少ない形質で種を特徴づけられると考えているため、
 形質の追加は慎重に行うべきである  
-\vspacesmall
-- 形質ベースアプローチは、多くの種が相互作用する食物網の複雑さを回避できるため、
+<!-- \vspacesmall -->
+> - 形質ベースアプローチは、多くの種が相互作用する食物網の複雑さを回避できるため、
 魚類群集全体の動的理論の開発に重要である  
-\vspacesmall
-- ある資源の知見が少なくても、水揚げされた個体の最大サイズについては分かっていることは多く、形質ベースアプローチは、理論をデータ不足下と関連付けるための隠し味である  
-\vspacesmall
-- 現実の生態系は種から構成されており、
+<!-- \vspacesmall -->
+> - ある資源の知見が少なくても、水揚げされた個体の最大サイズについては分かっていることは多く、形質ベースアプローチは、理論をデータ不足下と関連付けるための隠し味である  
+<!-- \vspacesmall -->
+> - 現実の生態系は種から構成されており、
 実践的な漁業管理は個々の資源に注意を払わなくてはいけない
 
 
@@ -283,20 +283,20 @@ What Charactarizes a Good Theory?
 
 ## 生態学において実験は困難である {.smaller}
 
-- 生態学において理想的な条件下で実験が行われるのは、せいぜい個体の生理に関するものくらいである（機能の反応、遊泳速度、代謝率など）  
+- 生態学において理想的な条件下で実験が行われるのは、せいぜい個体の生理に関するものくらいである（機能の反応、遊泳速度、代謝率など）\pause  
 \vspacesmall
-- 海では非意図的な実験を実行
+- 海では非意図的な実験を実行  
     1. 半世紀以上にわたる大スケールでの漁業の実施によって海の群集がどう変わるか？  
-    1. 資源の除去に対して海洋生態系がどう応答するか？  
+    1. 資源の除去に対して海洋生態系がどう応答するか？\pause
 
 \vspacesmall
-- 地球科学や天文学でも実験は困難であるが、ニュートンの法則やシュレディンガー方程式といった確固とした基盤がある  
+- 地球科学や天文学でも実験は困難であるが、ニュートンの法則やシュレディンガー方程式といった確固とした基盤がある\pause    
 \vspacesmall
-- 生態学では、そういった大前提は少なく、有効性も限定的  
+- 生態学では、そういった大前提は少なく、有効性も限定的\pause    
 \vspacesmall
-- 海の魚の実験や直接観察は困難であるため、モデルは特別な価値をもつ  
+- 海の魚の実験や直接観察は困難であるため、モデルは特別な価値をもつ\pause    
 \vspacesmall
-- モデルをチェックするための直接観察ができないので、信用できるモデルの基礎的な前提を置くことの重要性は高い
+- モデルをチェックするための直接観察ができないので、信用できるモデルの基礎的な前提を置くことの重要性は高い  
 
 ---
 
@@ -316,17 +316,17 @@ How to Read This Book
 
 1. Individuals: 個体レベルの生物現象に関する大前提  
     - 2章: サイズスペクトル理論
-    - 3章: 個体の成長と繁殖
+    - 3章: 個体の成長と繁殖\pause
       
 1. Populations: 個体群統計学と単一種管理  
     - 4章: 個体群統計学
     - 5章: 漁獲
     - 6章: 漁業による進化
-    - 7章: 個体群動態
+    - 7章: 個体群動態\pause
   
 1. Traits: 進化生態学や生活史理論との関連付け
     - 8章: 「真骨魚類」vs.「軟骨魚類」
-    - 9章: 魚類生態学の形質ベースアプローチ
+    - 9章: 魚類生態学の形質ベースアプローチ\pause
   
 1. Communities: ひとつの個体群から群集全体への拡張  
     - 10章: 消費者―資源動態
@@ -350,7 +350,7 @@ knitr::include_graphics("Fig2.png")
 \vspacesmall
 - 複雑な数式の導出はBoxに示し、Boxを飛ばしても読めるようになっている  
 \vspacesmall
-- 図の生成のためのコードはRで描かれており、Web上で公開されている  \footnote[frame]{https://github.com/Kenhasteandersen/Fish}  
+- 図の生成のためのコードはRで書かれており、Web上で公開されている  \footnote[frame]{https://github.com/Kenhasteandersen/Fish}  
 \vspacesmall
 - 始めから最後まで順番に読む必要はない  
 \vspacesmall
