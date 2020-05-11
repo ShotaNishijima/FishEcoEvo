@@ -48,6 +48,7 @@ options(tinytex.verbose = TRUE)
 \column{0.30\textwidth}
 
 ```{r photo, out.width=100}
+setwd("~/git/FishEcoEvo/Chapter1")
 knitr::include_graphics("KenAndersen.png")
 ```
 
@@ -143,7 +144,7 @@ knitr::include_graphics("Fig1.png")
 \vspacelarge
 - 漁業による選択の長期的な進化的影響は？  
 \vspacelarge
-- 生物宅的情報が（ほとんど）ない状況、特に開発途上国において、多くの割合を占める「データ不足 (data poor)」な資源をどう管理すべきか？  
+- 生物学的情報が（ほとんど）ない状況、特に開発途上国において、多くの割合を占める「データ不足 (data poor)」な資源をどう管理すべきか？  
 \vspacelarge
 - 種の多様性が高く、種をほとんど区別しない漁業が実施されており、資源毎の管理が非現実的な多くの生態系をどう扱うべきか？
 
@@ -354,7 +355,7 @@ knitr::include_graphics("Fig2.png")
 \vspacesmall
 - 始めから最後まで順番に読む必要はない  
 \vspacesmall
-- 少なくとも2章の最初の部分を呼んで理論の基本となる前提を理解し、可能であれば3章も合わせて読むことを推奨する
+- 少なくとも2章の最初の部分を読んで理論の基本となる前提を理解し、可能であれば3章も合わせて読むことを推奨する
 
 <!-- \footnotetext{本文で示されているリンクは見つからない} -->
 
