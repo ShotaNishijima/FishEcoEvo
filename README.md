@@ -14,5 +14,5 @@ Fish Ecology, Evolution, and Exploitation (K. Anderson著) の勉強会用レポ
 |9|Trait-Based Approach to Fish Ecology|澤田|2020/10/09|
 |10|Consumer-Resource Dynamics and Emergent Density Dependence|篠原|2020/10/30|
 |11|Trait Structure of the Fish Community|金森|2020/11/30|
-|12|Community Effects of Fishing|松葉|TBD|
+|12|Community Effects of Fishing|松葉|2020/12/23|
 |13|Epilogue|宮川|TBD|
